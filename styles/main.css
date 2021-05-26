@@ -71,7 +71,7 @@ input[type=text],
 input[type=number] {
     font-size: 1rem;
     padding: 1rem;
-    padding-right: 2.5rem;
+
     margin: 1rem;
     border: 1px solid black;
     box-sizing: border-box;
@@ -83,4 +83,12 @@ input[type=radio],
 input[type=checkbox] {
     margin-left: -3rem;
     cursor: pointer;
+}
+
+input[type=number] {
+    max-width: 8rem;
+}
+
+label {
+    padding-right: 2.5rem;
 }

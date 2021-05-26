@@ -42,6 +42,12 @@
             </section>
 
             <section>
+                <label for="antiembolic_stockings">Antiembolic stockings</label>
+                <input id="antiembolic_stockings" type="checkbox" name="antiembolic_stockings">
+                <hr>
+            </section>
+
+            <section>
                 <label for="position_change">Turn or position change</label>
                 <input id="position_change" type="checkbox" name="position_change">
                 <hr>
@@ -89,7 +95,7 @@
                 <input id="device_wheelchair" type="radio" name="device" value="wheelchair">
 
                 <label for="device_other">other</label>
-                <input id="device_other" type="text" name="device" onfocus="deselectRadios('device')">
+                <input id="device_other" type="text" name="device" onfocus="deselectRadios('device')" placeholder="please explain">
 
                 <label for="device_none">none</label>
                 <input id="device_none" type="radio" name="device" value="none">

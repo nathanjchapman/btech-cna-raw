@@ -35,8 +35,14 @@
                 <label for="oral_care_assisted">Assisted</label>
                 <input id="oral_care_assisted" type="radio" name="oral_care" value="oral_care_assisted">
 
-                <label for="oral_care_total_dependant">Totally Dependant</label>
-                <input id="oral_care_total_dependant" type="radio" name="oral_care" value="oral_care_total_dependant">
+                <label for="oral_care_total_dependent">Totally Dependent</label>
+                <input id="oral_care_total_dependent" type="radio" name="oral_care" value="oral_care_total_dependent">
+
+                <br><label for="dentures_upper">Upper dentures</label>
+                <input id="dentures_upper" type="checkbox" name="oral_care" value="dentures_upper">
+
+                <label for="dentures_lower">Lower Dentures</label>
+                <input id="dentures_lower" type="checkbox" name="oral_care" value="dentures_lower">
                 <hr>
             </section>
 
@@ -59,7 +65,7 @@
 
                 <!-- IF SELECTED UNCHECK ABOVE RADIO BOXES -->
                 <br><label for="bathing_other">Other</label>
-                <input onfocus="deselectRadios('bathing')" id="bathing_other" type="text" name="bathing">
+                <input onfocus="deselectRadios('bathing')" id="bathing_other" type="text" name="bathing" placeholder="please explain">
                 <hr>
             </section>
 
@@ -67,19 +73,19 @@
                 <h4>Toileting</h4>
 
                 <label for="toileting_independent">Independent</label>
-                <input id="toileting_independent" type="radio" name="toileting" value="independent">
+                <input id="toileting_independent" type="radio" name="toileting_assistance" value="independent">
 
                 <label for="toileting_assisted">Assisted</label>
-                <input id="toileting_assisted" type="radio" name="toileting" value="assisted">
+                <input id="toileting_assisted" type="radio" name="toileting_assistance" value="assisted">
 
-                <label for="toileting_commode">Commode</label>
-                <input id="toileting_commode" type="radio" name="toileting" value="commode">
+                <br><label for="toileting_commode">Commode</label>
+                <input id="toileting_commode" type="radio" name="toileting_method" value="commode">
 
                 <label for="toileting_bedpan">Bed pan</label>
-                <input id="toileting_bedpan" type="radio" name="toileting" value="bedpan">
+                <input id="toileting_bedpan" type="radio" name="toileting_method" value="bedpan">
 
                 <label for="toileting_catheter">Catheter</label>
-                <input id="toileting_catheter" type="radio" name="toileting" value="catheter">
+                <input id="toileting_catheter" type="radio" name="toileting_method" value="catheter">
                 <hr>
 
                 <label for="brief_change">Brief Change</label>
@@ -92,7 +98,7 @@
                 <input id="catheter" type="checkbox" name="catheter">
 
                 <br><label for="skin_care">Skin Care</label>
-                <input id="skin_care" type="text" name="skin_care">
+                <input id="skin_care" type="text" name="skin_care" placeholder="please explain">
                 <hr>
             </section>
 
@@ -131,7 +137,8 @@
                 <input id="meals_snack" type="radio" name="meals" value="snack">
 
                 <br><label for="meals_consumed">Percent Consumed</label>
-                <input id="meals_consumed" type="number" min="1" max="100">
+                <input id="meals_consumed" type="number" min="0" max="100">
+                <span> %</span>
             </section>
         </form>
     </main>

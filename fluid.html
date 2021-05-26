@@ -29,10 +29,13 @@
             <h3>Fluid Intake</h3>
             <section>
                 <label for="fluid">Fluid</label>
-                <input id="fluid" type="text" name="fluid" placeholder="water">
+                <input id="fluid" type="text" name="fluid" placeholder="e.g. water">
 
                 <label for="amount">Amount</label>
                 <input id="amount" type="number" name="amount"><span> mL</span>
+
+                <br><label for="fluid_npo">NPO</label>
+                <input id="fluid_npo" type="checkbox" name="fluid_npo">
             </section>
         </form>
 
@@ -52,7 +55,7 @@
                 <input id="urine_color_brown" type="radio" name="urine_color" value="brown">
 
                 <label for="urine_color_other">Other</label>
-                <input id="urine_color_other" type="text" name="urine_color" onfocus="deselectRadios('urine_color')">
+                <input id="urine_color_other" type="text" name="urine_color" onfocus="deselectRadios('urine_color')" placeholder="e.g. red">
 
                 <br><label for="urine_amount">Amount</label>
                 <input id="urine_amount" type="number" name="urine_amount"><span> mL</span>

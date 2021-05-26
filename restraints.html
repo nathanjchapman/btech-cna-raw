@@ -28,12 +28,17 @@
         <form>
             <h3>Restraints</h3>
             <section>
-                <label>Restraints
-            Side rails (X2 / X4) / Soft
-            </label>
+                <label for="side_rails_2">Side rails X2</label>
+                <input id="side_rails_2" type="radio" name="restraint_type" value="side_rails_2">
 
-            <br><label for="restraints_used">Restraints used</label>
-            <input id="restraints_used" type="checkbox" name="restraints_used">
+                <label for="side_rails_4">Side rails X4</label>
+                <input id="side_rails_4" type="radio" name="restraint_type" value="side_rails_4">
+
+                <label for="soft">Soft</label>
+                <input id="soft" type="radio" name="restraint_type" value="soft">
+
+                <label for="none">None</label>
+                <input id="none" type="radio" name="restraint_type" value="none">
             </section>
         </form>
     </main>
